@@ -1,19 +1,38 @@
-
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+				<table class="table table-hover">
+					  	<tr>
+					  		<input  type="hidden" value="<?php echo $user_id; ?>" id="inp_userid"/>
+					  		<td >Họ tên:</td>
+					  		<td ><?php echo $name; ?></td>
+					  	</tr>
+					  	<tr>
+					  		<td >User name:</td>
+					  		<td ><?php echo $user_name; ?></td>
+					  	</tr>
+					  	<tr>
+					  		<td >Roles:</td>
+					  		<td ><?php foreach($role_name as $r_name):?>
+					  				<input type="checkbox" value="<?php echo $r_name; ?>"/>
+					  				<?php echo $r_name; ?><br>
+					  				<?php endforeach; ?>
+					  		</td>
+					  		</tr>
+					  		<tr>
+					  			<div id="accordion">
+					  			<td >
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+										<span class="caret"></span>Permission: </a>
+								</td>
+					  			<td>
+									 <div id="collapseOne" class="panel-collapse collapse">
+										<div class="panel-body">
+											<?php foreach($permission as $per):?>
+									  			<input type="checkbox" value="<?php echo $per['_id']; ?>" 
+									  			class="inp_per"/>
+									  			<?php echo $per['per_name']; ?><br>
+							  					<?php endforeach; ?>
+										 </div>
+									</div>
+					  			</td>
+					  			</div>
+					  		</tr>
+					</table>

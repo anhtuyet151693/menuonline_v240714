@@ -45,15 +45,17 @@ $(document).ready(function(){
 	});
 
 
-	$(".grant").click(function(){
+	$(".grant").click(function(e){
 		//alert(1);
-		var user_id = $(this).data("id");
-		var url= $("#baseUrl").val()+"index.php/setting/grant_user";
-	alert(user_id);
-		/*$.post(url, {user_id:user_id}).done(function(){
-			//alert(1);
-			$('#myModal').modal('show');
-		});*/
+		e.preventDefault();
+		//var user_id = $(this).data("id");
+		alert(user_id);
+		//var url= $("#baseUrl").val()+"index.php/setting/grant_user";
+		
+		$.post(url, {user_id:user_id}).done(function(data){
+			$('#loadmodal').html(data);
+			$('#myModal').modal();
+		});
 	});
 
 

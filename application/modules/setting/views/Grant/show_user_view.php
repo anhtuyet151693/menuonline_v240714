@@ -1,4 +1,4 @@
-
+<!--
 <table class="table" >
 	<thead>
 		<tr>
@@ -64,5 +64,5 @@
 			</tr>
 			<?php endforeach;?>
 	</tbody>
-</table>
+</table>-->
 

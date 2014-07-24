@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/*$(document).ready(function(){
 	$(document).on("click",".btn_infor", function(){
 	//	alert($(this).data("id"));
 		var role_id = $(this).data("id");
@@ -57,5 +57,5 @@ $(document).ready(function(){
 	});
 	
 	
-});
+});*/
 

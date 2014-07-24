@@ -137,8 +137,9 @@
 												<?php endif; ?>
 						<td >			
 									<a  data-name = "<?php echo $role_user['user_name']; ?>"
-										class="glyphicon glyphicon-pencil edit" 
+										class="glyphicon glyphicon-pencil grant" 
 										data-id="<?php echo $role_user['_id']; ?>" 
+										data-toggle="modal" data-target=".bs-example-modal-lg"
 									</a>
 						</td>
 						<td><a class="glyphicon glyphicon-trash delete" data-id="<?php echo $role_user['_id'];?>" 
