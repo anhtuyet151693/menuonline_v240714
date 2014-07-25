@@ -318,7 +318,7 @@ class Setting extends MX_Controller {
 		
 		//$this->load->view("grant_view", $arr_user);
 		$this->load->view("Grant/edit_modal", $arr_user);
-		$this->load->view("home/footer");
+	//	$this->load->view("home/footer");
 	}
 		
 	// partner manager phan quyen cho partner user cua gian hang do

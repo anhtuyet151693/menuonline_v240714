@@ -48,11 +48,11 @@ $(document).ready(function(){
 	$(".grant").click(function(e){
 		//alert(1);
 		e.preventDefault();
-		//var user_id = $(this).data("id");
-		alert(user_id);
-		//var url= $("#baseUrl").val()+"index.php/setting/grant_user";
-		
+		var user_id = $(this).data("id");
+		//alert(user_id);
+		var url= $("#baseUrl").val()+"index.php/setting/grant_user";
 		$.post(url, {user_id:user_id}).done(function(data){
+			//alert(1);
 			$('#loadmodal').html(data);
 			$('#myModal').modal();
 		});

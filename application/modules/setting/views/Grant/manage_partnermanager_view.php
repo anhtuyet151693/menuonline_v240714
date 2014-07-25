@@ -160,43 +160,14 @@
 </div>
 
 
-
-
-
-<!--<!-- Modal 
-<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" 
-		aria-labelledby="myLargeModalLabel" aria-hidden="true" >
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-      <div class="modal-header">
+    <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span>
         		<span class="sr-only">Close</span></button>
         <h4 class="modal-title" id="myModalLabel"><?php echo $role_user['name']; ?></h4>
       </div>
-      <div class="modal-body">
-		<div class="row">
-			<div id="loadmodal">
-				
-			</div>
-			</div>
-        
-      </div>
-      <div class="modal-footer">
-       <button type="button" class="btn btn-default">Save changes</button>
-        <button type="button" class="btn btn-default">Add roles</button>
-         <button type="button" class="btn btn-default">Delete</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-       
-      </div>
-    </div>
-  </div>
-</div>-->
-
-<!--<button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>-->
-
-<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
      <div id="loadmodal">
 				
 			</div>
